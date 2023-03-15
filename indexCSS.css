@@ -1,0 +1,13 @@
+body
+{
+    padding: 0; margin: 0;
+    background-color: #EFF2F9;
+}
+
+#Content
+{
+    top: 0%; left: 50%; transform: translate(-50%, 0%);
+    width: 800; height: 100vh;
+    background-color: #E4EbF1;
+    position: absolute;
+}
