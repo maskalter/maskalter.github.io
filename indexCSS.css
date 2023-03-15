@@ -1,13 +1,97 @@
 body
 {
     padding: 0; margin: 0;
-    background-color: #EFF2F9;
+    font-family: Microsoft JhengHei;
+    background-color: #EFF2F9; color: #333F4A;
 }
 
 #Content
 {
     top: 0%; left: 50%; transform: translate(-50%, 0%);
-    width: 800; height: 100vh;
-    background-color: #E4EbF1;
+    width: 600px;
+    border-color:#B5BFC6; border-style:solid; border-width: 0px 1px 0px 1px;
+    position: absolute;
+}
+
+#Nav
+{
+    top: 0%; right: 100%; transform: translate(0%, 0%);
+    width: 200px; height: 100vh;
+    position: absolute;
+}
+
+#Language
+{
+    padding: 20px;
+    text-align: right;
+}
+#L_CH:hover { cursor: pointer; }
+#L_JP:hover { cursor: pointer; }
+#L_EN:hover { cursor: pointer; }
+
+.Link
+{
+    width: 100%;
+    text-align: center;
+}
+
+#Avatar
+{
+    top: 0%; left: 0%; transform: translate(0%, 0%);
+    width: 15%; height: 15%; border-radius: 30%;
+    position: relative;
+}
+
+#Shop
+{
+    top: 0%; left: 50%; transform: translate(-50%, 0%);
+    width: 90%; height: 30%; border-radius: 30%;
+    background-color: #EFF2F9; box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px, white -2px -2px 12px; 
+    position: relative;
+}
+
+#Shop_Buts
+{
+    top: 0%; left: 50%; transform: translate(-50%, 0%);
+    width: 100%; height: 60%;
+    position: relative;
+}
+
+#Shop1 { width: 33.333%; height: 100%; float: left;}
+#Shop2 { width: 33.333%; height: 100%; float: left;}
+#Shop3 { width: 33.333%; height: 100%; float: left;}
+
+.Shop_But
+{
+    top: 0%; left: 50%; transform: translate(-50%, 0%);
+    width: 80%; height: 80%; border-radius: 10%;
+    background-color: #EFF2F9; box-shadow: rgba(0, 0, 0, 0.10) 0px 4px 12px, white -2px -2px 12px; 
+    position: relative;
+}
+.Shop_But:hover{ cursor: pointer; background-color: #E4EBF1;}
+
+#Shop_Img1 { width: 40%; height: 40%; padding-top: 30%; }
+#Shop_Img2 { width: 90%; height: 90%; padding-top: 07%; }
+#Shop_Img3 { width: 80%; height: 80%; padding-top: 12%; }
+
+.LinkBox
+{
+    top: 0%; left: 50%; transform: translate(-50%, 0%); margin-top: 2em;
+    width: 90%; height: 30%; border-radius: 30%;
+    text-align: left;
+    background-color: #EFF2F9; box-shadow: rgba(0, 0, 0, 0.10) 0px 4px 12px, white -2px -2px 12px; 
+    position: relative;
+}
+.LinkBox:hover{ cursor: pointer; background-color: #E4EBF1;}
+
+.LinkIcon
+{
+    padding-top: 1em; padding-bottom: 0.5em; padding-left: 2em;
+    width: 2em; height: 2em; 
+}
+
+.LinkText
+{
+    top: 50%; left: 5em; transform: translate(0%, -50%);
     position: absolute;
 }
