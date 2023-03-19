@@ -1,15 +1,24 @@
 body
 {
-    padding: 0; margin: 0;
-    font-family: Microsoft JhengHei;
+    padding: 0; margin: 0; overflow-x: hidden;
+    font-size: 16px; font-family: Microsoft JhengHei;
     background-color: #EFF2F9; color: #333F4A;
 }
+
+p  { font-size: 16px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h5 { font-size: 18px; }
+
+#CH { display: block; }
+#JP { display: none;   }
+#EN { display: none;   }
 
 #Content
 {
     top: 0%; left: 50%; transform: translate(-50%, 0%);
     width: 600px;
-    border-color:#B5BFC6; border-style:solid; border-width: 0px 1px 0px 1px;
+    border-color:#B5BFC6; border-style: solid; border-width: 0px 1px 0px 1px;
     position: absolute;
 }
 
@@ -17,6 +26,7 @@ body
 {
     top: 0%; right: 100%; transform: translate(0%, 0%);
     width: 200px; height: 100vh;
+    /*border-color:#B5BFC6; border-style: solid; border-width: 0px 0px 0px 1px;*/
     position: absolute;
 }
 
@@ -35,14 +45,14 @@ body
     text-align: center;
 }
 
-#Avatar
+.Avatar
 {
     top: 0%; left: 0%; transform: translate(0%, 0%);
     width: 15%; height: 15%; border-radius: 30%;
     position: relative;
 }
 
-#Shop
+.Shop
 {
     top: 0%; left: 50%; transform: translate(-50%, 0%);
     width: 90%; height: 30%; border-radius: 30%;
@@ -50,16 +60,16 @@ body
     position: relative;
 }
 
-#Shop_Buts
+.Shop_Buts
 {
     top: 0%; left: 50%; transform: translate(-50%, 0%);
     width: 100%; height: 60%;
     position: relative;
 }
 
-#Shop1 { width: 33.333%; height: 100%; float: left;}
-#Shop2 { width: 33.333%; height: 100%; float: left;}
-#Shop3 { width: 33.333%; height: 100%; float: left;}
+.Shop1 { width: 33.333%; height: 100%; float: left;}
+.Shop2 { width: 33.333%; height: 100%; float: left;}
+.Shop3 { width: 33.333%; height: 100%; float: left;}
 
 .Shop_But
 {
@@ -70,13 +80,19 @@ body
 }
 .Shop_But:hover{ cursor: pointer; background-color: #E4EBF1;}
 
-#Shop_Img1 { width: 40%; height: 40%; padding-top: 30%; }
-#Shop_Img2 { width: 90%; height: 90%; padding-top: 07%; }
-#Shop_Img3 { width: 80%; height: 80%; padding-top: 12%; }
+.Shop_Img1 { width: 40%; height: 40%; padding-top: 30%; }
+.Shop_Img2 { width: 90%; height: 90%; padding-top: 07%; }
+.Shop_Img3 { width: 80%; height: 80%; padding-top: 12%; }
+
+.LinkTitle
+{
+    padding-top: 1em; padding-left: 2.75em; 
+    text-align: left;
+}
 
 .LinkBox
 {
-    top: 0%; left: 50%; transform: translate(-50%, 0%); margin-top: 2em;
+    top: 0%; left: 50%; transform: translate(-50%, 0%); margin-top: 1em;
     width: 90%; height: 30%; border-radius: 30%;
     text-align: left;
     background-color: #EFF2F9; box-shadow: rgba(0, 0, 0, 0.10) 0px 4px 12px, white -2px -2px 12px; 
@@ -94,4 +110,16 @@ body
 {
     top: 50%; left: 5em; transform: translate(0%, -50%);
     position: absolute;
+}
+
+#FootImg
+{
+    bottom: 1em; left: 50%; transform: translate(-60%, 0%);
+    width: auto; height: 2em;
+    position: absolute;
+}
+
+.Page
+{
+    padding-left: 1em;
 }
