@@ -1,8 +1,22 @@
 var Language = 1;
+var refurl = document.referrer;
 
 $(document).ready(function()
 {
     WindowSize();
+
+    if(refurl.startsWith("https://shopee")       ){ Language = 1; LanguageSelection(); }
+    if(refurl.startsWith("https://www.plurk")    ){ Language = 1; LanguageSelection(); }
+    if(refurl.startsWith("https://www.gamer")    ){ Language = 1; LanguageSelection(); }
+    if(refurl.startsWith("https://home.gamer")   ){ Language = 1; LanguageSelection(); }
+    if(refurl.startsWith("https://forum.gamer")  ){ Language = 1; LanguageSelection(); }
+    if(refurl.startsWith("https://www.facebook") ){ Language = 1; LanguageSelection(); }
+    if(refurl.startsWith("https://www.instagram")){ Language = 1; LanguageSelection(); }
+    
+    if(refurl.startsWith("https://twitter")            ){ Language = 2; LanguageSelection(); }
+    if(refurl.startsWith("https://www.pixiv")          ){ Language = 2; LanguageSelection(); }
+    if(refurl.startsWith("https://maskalter333.booth") ){ Language = 2; LanguageSelection(); }
+    if(refurl.startsWith("https://maskalter333.fanbox")){ Language = 2; LanguageSelection(); }
 
     $("#L_CH").click(function(){ Language = 1; LanguageSelection();});
     $("#L_JP").click(function(){ Language = 2; LanguageSelection();});
